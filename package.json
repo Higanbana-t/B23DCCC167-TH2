@@ -1,0 +1,10 @@
+{
+  "name": "th-2-library",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bài thực hành TH-2: Thư viện sách - Lập trình Web",
+  "scripts": {
+    "dev": "npm --prefix phan-b run dev",
+    "build": "npm --prefix phan-b run build"
+  }
+}

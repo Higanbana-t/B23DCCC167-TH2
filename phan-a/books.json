@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "Lập trình Web với JavaScript",
+    "author": "Nguyễn Văn An",
+    "genre": "CNTT",
+    "year": 2022
+  },
+  {
+    "id": 2,
+    "title": "Dế Mèn Phiêu Lưu Ký",
+    "author": "Tô Hoài",
+    "genre": "Văn học",
+    "year": 2018
+  },
+  {
+    "id": 3,
+    "title": "Vũ Trụ Trong Vỏ Hạt Dẻ",
+    "author": "Stephen Hawking",
+    "genre": "Khoa học",
+    "year": 2015
+  },
+  {
+    "id": 4,
+    "title": "Clean Code - Mã Sạch",
+    "author": "Robert C. Martin",
+    "genre": "CNTT",
+    "year": 2020
+  },
+  {
+    "id": 5,
+    "title": "Đại Việt Sử Ký Toàn Thư",
+    "author": "Ngô Sĩ Liên",
+    "genre": "Lịch sử",
+    "year": 2010
+  },
+  {
+    "id": 6,
+    "title": "Nhà Giả Kim",
+    "author": "Paulo Coelho",
+    "genre": "Văn học",
+    "year": 2017
+  },
+  {
+    "id": 7,
+    "title": "Cấu trúc dữ liệu và giải thuật",
+    "author": "Trần Minh Đức",
+    "genre": "CNTT",
+    "year": 2021
+  },
+  {
+    "id": 8,
+    "title": "Lược Sử Thời Gian",
+    "author": "Stephen Hawking",
+    "genre": "Khoa học",
+    "year": 2019
+  },
+  {
+    "id": 9,
+    "title": "Số Đỏ",
+    "author": "Vũ Trọng Phụng",
+    "genre": "Văn học",
+    "year": 2016
+  },
+  {
+    "id": 10,
+    "title": "Lược Sử Loài Người - Sapiens",
+    "author": "Yuval Noah Harari",
+    "genre": "Lịch sử",
+    "year": 2018
+  }
+]

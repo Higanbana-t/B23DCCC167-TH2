@@ -1,0 +1,324 @@
+/* Giao diện cơ bản cho Phần B - React (Không màu mè, phong cách sinh viên mới học) */
+
+.app-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 15px;
+  min-height: 100vh;
+}
+
+/* Header */
+.app-header {
+  background-color: #e9e9e9;
+  border: 1px solid #cccccc;
+  padding: 15px 20px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.app-header h1 {
+  font-size: 20px;
+}
+
+.fav-badge {
+  background-color: #ffffff;
+  padding: 6px 12px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Top bar chứa nút theme */
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+}
+
+.btn-theme {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+/* Section Wrapper */
+.section-box {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.section-title {
+  font-size: 16px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 6px;
+}
+
+/* Ô tìm kiếm */
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.search-box input {
+  padding: 6px 10px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  font-size: 14px;
+  min-width: 250px;
+}
+
+/* Lọc thể loại bằng các nút bấm */
+.genre-filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.filter-label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.btn-genre {
+  padding: 5px 12px;
+  font-size: 13px;
+  background-color: #f2f2f2;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn-genre.active {
+  background-color: #007bff;
+  color: #ffffff;
+  border-color: #0056b3;
+  font-weight: bold;
+}
+
+/* Dòng trạng thái */
+.status-bar {
+  font-weight: bold;
+  font-size: 14px;
+  color: #555555;
+  margin-top: 8px;
+}
+
+/* Lưới thẻ sách (3 cột desktop, 1 cột mobile) */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.empty-msg {
+  text-align: center;
+  padding: 20px;
+  color: #777777;
+}
+
+/* Thẻ sách */
+.book-card {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 12px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.book-title {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.book-author,
+.book-genre,
+.book-year {
+  font-size: 13px;
+  color: #555555;
+  margin-bottom: 4px;
+}
+
+.card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.card-actions button {
+  padding: 5px 10px;
+  font-size: 13px;
+  border-radius: 3px;
+  cursor: pointer;
+  border: 1px solid #bbbbbb;
+  background-color: #f2f2f2;
+}
+
+.btn-fav.active {
+  background-color: #ffe082;
+  border-color: #ffd54f;
+  font-weight: bold;
+}
+
+.btn-delete {
+  color: #c62828;
+}
+
+/* Form thêm sách */
+.form-add-book {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  padding: 6px 10px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.error-text {
+  color: #d32f2f;
+  font-size: 12px;
+}
+
+.btn-submit {
+  align-self: flex-start;
+  padding: 7px 15px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: 1px solid #0056b3;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+.app-footer {
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #cccccc;
+  font-size: 13px;
+  color: #666666;
+  margin-top: 20px;
+}
+
+/* Responsive: 1 cột trên điện thoại */
+@media (max-width: 768px) {
+  .book-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+}
+
+/* Chế độ tối (Dark mode) */
+.app-container.dark-mode {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+.app-container.dark-mode .app-header,
+.app-container.dark-mode .section-box,
+.app-container.dark-mode .book-card {
+  background-color: #2b2b2b;
+  border-color: #444444;
+}
+
+.app-container.dark-mode .section-title {
+  border-color: #444444;
+}
+
+.app-container.dark-mode .fav-badge,
+.app-container.dark-mode .btn-theme {
+  background-color: #3a3a3a;
+  border-color: #555555;
+  color: #ffffff;
+}
+
+.app-container.dark-mode .book-author,
+.app-container.dark-mode .book-genre,
+.app-container.dark-mode .book-year,
+.app-container.dark-mode .status-bar {
+  color: #bbbbbb;
+}
+
+.app-container.dark-mode input,
+.app-container.dark-mode select {
+  background-color: #333333;
+  color: #ffffff;
+  border-color: #555555;
+}
+
+.app-container.dark-mode .btn-genre {
+  background-color: #3a3a3a;
+  color: #ffffff;
+  border-color: #555555;
+}
+
+.app-container.dark-mode .btn-genre.active {
+  background-color: #007bff;
+  border-color: #0056b3;
+}
+
+.app-container.dark-mode .card-actions button {
+  background-color: #3a3a3a;
+  border-color: #555555;
+  color: #ffffff;
+}
+
+.app-container.dark-mode .btn-fav.active {
+  background-color: #826a00;
+  border-color: #b29200;
+  color: #ffffff;
+}

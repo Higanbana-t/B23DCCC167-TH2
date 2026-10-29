@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thư Viện Sách - Phần A (DOM thuần)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header: Tên thư viện, số sách yêu thích, nút chế độ tối -->
+  <header class="app-header">
+    <div class="header-content">
+      <h1>Thư Viện Sách Lớp Học</h1>
+      <div class="header-actions">
+        <span class="fav-badge">Yêu thích: <strong id="favCount">0</strong> cuốn</span>
+        <button id="themeToggle" class="btn-theme">Chế độ tối</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="app-main">
+    <!-- Thanh công cụ: tìm kiếm và chọn thể loại -->
+    <section class="toolbar">
+      <div class="search-box">
+        <label for="searchInput">Tìm kiếm:</label>
+        <input type="text" id="searchInput" placeholder="Nhập tên sách..." />
+      </div>
+      <div class="filter-box">
+        <label for="genreSelect">Thể loại:</label>
+        <select id="genreSelect">
+          <option value="all">-- Tất cả thể loại --</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Dòng trạng thái hiển thị số lượng sách -->
+    <div class="status-bar" id="statusBar">Đang hiển thị 0 / 0 cuốn</div>
+
+    <!-- Thông báo đang tải và lỗi -->
+    <div id="loading" class="alert-box">Đang tải danh sách sách...</div>
+    <div id="errorMsg" class="alert-box alert-error" style="display: none;"></div>
+
+    <!-- Lưới hiển thị danh sách sách (3 cột desktop, 1 cột mobile) -->
+    <section class="book-grid" id="bookGrid"></section>
+
+    <!-- Form thêm sách mới -->
+    <section class="form-section">
+      <h2>Thêm Sách Mới</h2>
+      <form id="addBookForm" novalidate>
+        <div class="form-group">
+          <label for="titleInput">Tên sách (*):</label>
+          <input type="text" id="titleInput" placeholder="Ví dụ: Học lập trình JS" />
+          <span class="error-text" id="titleError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="authorInput">Tác giả (*):</label>
+          <input type="text" id="authorInput" placeholder="Ví dụ: Nguyễn Văn A" />
+          <span class="error-text" id="authorError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="genreInput">Thể loại (*):</label>
+          <select id="genreInput">
+            <option value="">-- Chọn thể loại --</option>
+          </select>
+          <span class="error-text" id="genreError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="yearInput">Năm xuất bản (*):</label>
+          <input type="number" id="yearInput" placeholder="1900 - nay" />
+          <span class="error-text" id="yearError"></span>
+        </div>
+
+        <button type="submit" class="btn-submit">Thêm sách</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <p>Bài thực hành TH-2 - Lập trình Web - Phần A (JavaScript thuần)</p>
+  </footer>
+
+  <!-- Script ES Module -->
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
